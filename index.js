@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const app = express();
-const port = 3000; // codedamn default port
+const port = 1337; // codedamn default port
 const apiController = require("./apiRoute");
 
 app.get("/", (req, res) => {
@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 
 // create an api here which should be on path ("/api") and forward it to
 
-app.get("/api", apiController);
+
 
 // Start the server
 app.listen(port, () => {
